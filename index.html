@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billclick - ניהול וועדי בתים חכם בשקיפות מלאה</title>
+    <meta name="description"
+        content="בילקליק - פתרונות מתקדמים לניהול וועדי בתים. שירותי ניקיון, מעליות, גינון, ביטוחים ועוד. שקיפות מלאה ושירות מקצועי.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- JSON-LD SEO Structure -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BillClick",
+      "url": "https://billclick.co.il",
+      "logo": "https://billclick.co.il/assets/favicon.svg",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Yehonatan Yifrach",
+          "jobTitle": "Founder & Economist"
+        },
+        {
+          "@type": "Person",
+          "name": "Kobi Shoshani",
+          "jobTitle": "Founder & Investor"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+972-4-6655665",
+        "contactType": "customer service",
+        "areaServed": "IL",
+        "availableLanguage": "Hebrew"
+      },
+      "sameAs": [
+        "https://www.facebook.com/billclick"
+      ]
+    }
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon & SEO -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <meta property="og:title" content="BillClick - ניהול וועד בית מתקדם">
+    <meta property="og:description" content="הפתרון החכם לניהול וועד הבית. שקיפות, חיסכון ונוחות באפליקציה אחת.">
+    <meta property="og:image" content="https://billclick.co.il/og-image.jpg"> <!-- Placeholder for now -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://billclick.co.il">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">BillClick<span class="dot">.</span></div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container margin-auto">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    BillClick<span class="dot">.</span>
+                </a>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#about">אודות</a></li>
+                        <li><a href="#services">שירותים</a></li>
+                        <li><a href="#apps">אפליקציה</a></li>
+                        <li><a href="#faq">שאלות ותשובות</a></li>
+                        <li><a href="#suppliers">ספקים</a></li>
+                        <li class="mobile-link"><a href="#contact">צור קשר</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#contact" class="btn btn-primary header-cta">צור קשר</a>
+
+                <button class="mobile-menu-toggle" aria-label="תפריט">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <!-- Particle Canvas -->
+        <canvas id="hero-particles"></canvas>
+        <div class="container margin-auto relative z-10">
+            <div class="hero-content fade-in-up">
+                <h1>ניהול וועד הבית <br><span class="highlight-gradient">מעולם לא היה פשוט יותר</span></h1>
+                <p class="subtitle">בילקליק - שקיפות מלאה, הצעות ייעול והתנהלות על הצד הטוב ביותר.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-lg btn-primary glow-effect">מתחילים עכשיו</a>
+                    <a href="#about" class="btn btn-lg btn-outline">קרא עוד</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SVG Wave Divider -->
+        <div class="custom-shape-divider-bottom-1689970993">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container margin-auto">
+            <div class="section-badge text-center">מי אנחנו?</div>
+            <div class="section-title text-center scroll-reveal">
+                <h2>קצת עלינו</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <h3>למה לעבוד קשה? <span class="text-primary">Alexy</span> כאן בשביל זה</h3>
+                    <p>
+                        בילקליק יצאה לדרך לאחר הקמת פרויקט לקידום ההון האנושי. דמי וועד הבית החודשיים הינם הון אנושי
+                        אישי של כל אחד ואחד מאתנו ונגבים על פי חוק, ועל כך ראוי שינוהלו בהתאם. התנהלות וועד הבית קובעת
+                        בפועל את איכות החיים וחיי היום יום, ורבת השפעה על הערכת שווי הנכס.
+                    </p>
+                    <p>
+                        מחסור בשקיפות, התנהלות לקויה, חוסר וודאות וכד' עשויים לגרור חובות, תקלות המצטברות לאורך זמן,
+                        ולעיתים גם הוצאות גבוהות ובלתי צפויות.
+                    </p>
+                    <div class="glass-box highlight-text">
+                        <strong>בשביל זה אנחנו כאן!</strong> אצלנו תקבלו שירותי מקצועי ואדיב, שקיפות מלאה, הצעות ייעול
+                        והתנהלות על הצד הטוב ביותר!
+                    </div>
+                </div>
+                <div class="about-features scroll-reveal">
+                    <div class="feature-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <div>
+                            <h4>ניהול כספי שקוף</h4>
+                            <p>ניהול ספר הוצאות והכנסות, הנפקת דוחות תקופתיים ושירותי גבייה.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <div>
+                            <h4>סל שירותים מגוון</h4>
+                            <p>מונגש ע"י ספקי חוץ מורשים, מוסמכים ומקצועיים בכל תחום.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <div>
+                            <h4>שירות אישי ומקצועי</h4>
+                            <p>מוקד שירות לקוחות לפניות, הצעות ייעול וייעוץ מקצועי.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Founders Section -->
+            <div class="founders-section text-center mt-4 scroll-reveal">
+                <div class="section-badge">הנהלה</div>
+                <h2>המייסדים שלנו</h2>
+                <div class="founders-grid">
+                    <div class="founder-card glass-box">
+                        <img src="assets/yi.jpg" alt="יפרח יהונתן" class="founder-img">
+                        <h3>מייסד: יפרח יהונתן</h3>
+                        <p class="role">יזם, כלכלן בכיר</p>
+                        <p>ייעוץ כלכלי, ניהול דו"חות פיננסיים, ודו"חות חברה. מעל 5 שנות וותק בחברת הייטק גדולה בישראל.
+                        </p>
+                    </div>
+                    <div class="founder-card glass-box">
+                        <img src="assets/ks.jpg" alt="שושני קובי" class="founder-img">
+                        <h3>מייסד: שושני קובי</h3>
+                        <p class="role">איש עסקים, משקיע</p>
+                        <p>בעל עסק פורה מעל עשור, רחב אופקים. בעל קשרי לקוחות מסחריים רחב.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="stats-section mt-4">
+        <div class="container margin-auto">
+            <h2 class="stats-title scroll-reveal">המספרים מדברים בעד עצמם</h2>
+            <div class="stats-grid">
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="1500">0</div>
+                    <div class="stat-label">לקוחות מרוצים</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">שנות ניסיון</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">אנשי מקצוע</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">פרויקטים פעילים</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container margin-auto">
+            <div class="section-header text-center scroll-reveal">
+                <div class="section-badge">מה אנחנו עושים?</div>
+                <h2>סל השירותים שלנו</h2>
+                <p>מגוון פתרונות לניהול הנכס במקום אחד - הכירו את הסל המורחב</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Cleaning -->
+                <div class="service-card scroll-reveal">
+                    <div class="card-bg-shape"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-broom"></i>
+                    </div>
+                    <h3>ניקיון</h3>
+                    <p class="short-desc">שירותי הניקיון הם חלק מהסל הבסיסי וכלולים במחיר.</p>
+                    <ul class="service-list">
+                        <li>שטיפת קומת הכניסה: לובי + מעליות</li>
+                        <li>ניקיון קומתי ושטחים משותפים בכל קומה</li>
+                        <li>ניקוי חלונות ויטרינה, מסילות והברקת מעליות</li>
+                        <li>הברקת ריהוט, דקורציה ומערכות אינטרקום</li>
+                        <li>שטיפה וניקיון יסודי של חדרי המדרגות</li>
+                        <li><strong>ניקיון חניונים (בתוספת נפרדת)</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Elevators -->
+                <div class="service-card scroll-reveal">
+                    <div class="card-bg-shape"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-elevator"></i>
+                    </div>
+                    <h3>מעליות</h3>
+                    <p class="short-desc">תחזוקה נכונה ומוסמכת עשויה לחסוך הוצאות עתידיות.</p>
+                    <ul class="service-list">
+                        <li>הסכם מול חברות מעליות מוסמכות ומרושיינות</li>
+                        <li>ניהול התקשרות מול החברה במקרי תקלה</li>
+                        <li>חידוש חוזה שנתי בהתאם לבקשה</li>
+                        <li>סקר חצי שנתי/שנתי לבדיקת הוזלת עלויות</li>
+                    </ul>
+                </div>
+
+                <!-- Gardening -->
+                <div class="service-card scroll-reveal">
+                    <div class="card-bg-shape"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-brands fa-pagelines"></i>
+                    </div>
+                    <h3>גינון</h3>
+                    <p class="short-desc">הגינה החיצונית הינה פני החוץ של המבנה המשותף.</p>
+                    <ul class="service-list">
+                        <li>גנני חוץ לחוות דעת ראשונית והצעות</li>
+                        <li>טיפוח הגינה וגיזום שוטף</li>
+                        <li>טיפול במערכות השקיה</li>
+                        <li>עלות קבועה וידועה מראש</li>
+                    </ul>
+                </div>
+
+                <!-- Maintenance -->
+                <div class="service-card scroll-reveal">
+                    <div class="card-bg-shape"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>אחזקה</h3>
+                    <p class="short-desc">בדיקות חצי שנתיות/שנתיות בהתאם לסוג המבנה.</p>
+                    <ul class="service-list">
+                        <li>בדיקות מעליות ומשאבות תקופתיות</li>
+                        <li>ביקורת מערכות (אבטחה, אש, ספרינקלרים)</li>
+                        <li>החלפת נורות ותיקונים כלליים</li>
+                        <li>התקנות, הובלה והרכבת ריהוט</li>
+                    </ul>
+                </div>
+
+                <!-- Insurance -->
+                <div class="service-card scroll-reveal">
+                    <div class="card-bg-shape"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3>ביטוחים</h3>
+                    <p class="short-desc">חיסכון בעלויות עתידיות והגנה במקרים בלתי צפויים.</p>
+                    <ul class="service-list">
+                        <li>חברות באגודה + ביטוח צד ג' וחבות מעבידים (כלול)</li>
+                        <li>ביטוח מבנה ותכולה משותפת (סל מורחב)</li>
+                        <li>ביטוח נזקי צנרת, אש ורעידות אדמה (סל מורחב)</li>
+                        <li>ליווי בהתנהלות מול חברות הביטוח להחזר כספי</li>
+                    </ul>
+                </div>
+
+                <!-- More Services -->
+                <div class="service-card scroll-reveal">
+                    <div class="card-bg-shape"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-plus-circle"></i>
+                    </div>
+                    <h3>שירותים נוספים</h3>
+                    <p class="short-desc">הדברה, אבטחה ושיפור איכות החיים לפי דרישה.</p>
+                    <ul class="service-list">
+                        <li>הדברה חצי שנתית/שנתית והרחקת יונים</li>
+                        <li>גידור, מצלמות אבטחה ושירותי שמירה</li>
+                        <li>טיפוח חדר כושר, גינת משחקים וג'ימבורי</li>
+                        <li>מוזיקה בלובי ושדרוגים (דלת כניסה, אינטרקום)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 scroll-reveal">
+                <p class="info-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    ייעוץ מקצועי יינתן ע"י המלצת מומחים מטעם <a href="https://www.tarbut-hadiur.gov.il/" target="_blank"
+                        class="link-highlight">האגודה לתרבות הדיור</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="section apps-section">
+        <div class="container margin-auto">
+            <div class="apps-container scroll-reveal">
+                <div class="apps-content">
+                    <div class="section-badge badge-light">חדשנות</div>
+                    <h2>הכירו את VAADBOT ו- VAADBIT</h2>
+                    <h3>חברת מחקר ופיתוח לוועדי בתים</h3>
+                    <p>
+                        במערכת <strong>VAADBOT</strong> תמצאו ספקים מורשים במגוון רחב של תחומים ואנשי מקצוע לניהול המבנה
+                        שלכם.
+                    </p>
+                    <p>
+                        אפליקציית <strong>VAADBIT</strong> הינה ממשק תשלומים ייעודי לחברות ניהול וועדי הבתים בישראל.
+                    </p>
+                    <div class="app-buttons">
+                        <a href="https://play.google.com/store/search?q=vaadbot&c=apps&hl=en" target="_blank"
+                            class="store-btn google-play fa-bounce-hover">
+                            <i class="fa-brands fa-google-play"></i>
+                            <div>
+                                <small>הורד עכשיו ב-</small>
+                                <span>Google Play</span>
+                            </div>
+                        </a>
+                        <a href="https://apps.apple.com/il/app/vaadbot/id6475007894?l=he" target="_blank"
+                            class="store-btn app-store fa-bounce-hover">
+                            <i class="fa-brands fa-apple"></i>
+                            <div>
+                                <small>זמין גם ב-</small>
+                                <span>App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="apps-visual">
+                    <!-- CSS Only Phone Mockup -->
+                    <div class="phone-mockup">
+                        <div class="notch"></div>
+                        <div class="screen-content">
+                            <div class="app-logo">
+                                <i class="fa-solid fa-building-user"></i>
+                                <span>VaadBot</span>
+                            </div>
+                            <div class="app-ui-row"></div>
+                            <div class="app-ui-row short"></div>
+                            <div class="app-ui-card"></div>
+                            <div class="app-ui-card"></div>
+                            <div class="app-cta-mock">הורד עכשיו</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Wave -->
+        <div class="custom-shape-divider-bottom-apps">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container margin-auto">
+            <div class="section-badge">ידע זה כוח</div>
+            <div class="section-title text-center scroll-reveal">
+                <h2>שאלות ותשובות</h2>
+                <p>כל מה שרציתם לדעת ולא העזתם לשאול</p>
+            </div>
+
+            <div class="accordion scroll-reveal">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>מי אנחנו ומה זה בילקליק?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>בילקליק הינה חברת מחקר ופיתוח לוועדי בתים בישראל וחברות ניהול, המפעילה את המיזמים VAADBOT
+                            ו-VAADBIT. אנו מספקים פתרונות מקיפים לתחזוקה, ניהול כספי ושיפור איכות החיים בבניינים
+                            משותפים.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>מדוע דווקא לבחור בבילקליק?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>אנו מתחייבים לשירות מקצועי ואדיב, שקיפות מלאה, הפקת דוחות תזרימיים, ניהול ספר הוצאות והכנסות,
+                            ודמי ניהול קבועים ומוגדרים מראש.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>האם השירות מייקר את וועד הבית?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>לא בהכרח. אומנם יש דמי ניהול קבועים, אך אנו פועלים לחסוך לכם הוצאות עתידיות וגבייה מיותרת
+                            באמצעות התנהלות כלכלית חכמה. במידה ואתם כבר מתנהלים מול חברת ניהול - חשוב לבדוק מה כלול בסל.
+                            אם לא עיינתם בספר ההוצאות וההכנסות עדיין - נוכל לתת לכם הערכת מחיר כללית.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>מה עלות דמי וועד הבית?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>העלות נגזרת מפרמטרים כגון גיל המבנה, מספר הדירות, המעליות וסל השירותים המבוקש. כל שירות
+                            מתומחר בנפרד (מעליות, גינון, ביטוחים וכו'), כך שאתם משלמים רק על מה שאתם צריכים. דמי ניהול
+                            קבועים, כל שירות כלול בעלות נפרדת ולספק נפרד.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>מה התפקיד שלנו בפועל?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>אנחנו נדאג לכל השאר - Alexy תטפל בכל: גבייה מסודרת, הנפקת דו"חות מסודרים, פיקוח על כל ספק
+                            שירות שמגיע, הצעות מחיר מגוונות ונדאג להתנהלות יעילה וטובה ביותר.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>איך מקבלים את השירות?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>צרו איתנו קשר ואנחנו כבר נדאג להליך מוסדר בהתאם לבקשתכם.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suppliers / Business Section -->
+    <section id="suppliers" class="section suppliers-section">
+        <div class="container text-center scroll-reveal">
+            <div class="suppliers-card glass-box">
+                <h2>ספקים יקרים, <span class="text-primary">Alexy</span> כאן גם בשבילכם!</h2>
+                <p class="subtitle">העוזרת האישית שלכם מול וועדי הבתים וכל לקוח אחר</p>
+                <div class="suppliers-content">
+                    <p class="lead">לקוחות עסקיים? עוסקים מורשים? חברות?</p>
+                    <p>גם אתם מוזמנים לפנות אלינו לשימור כל מבנה קיים.</p>
+                    <div class="tags-container">
+                        <span class="tag">ניקיון</span>
+                        <span class="tag">גינון</span>
+                        <span class="tag">מעליות</span>
+                        <span class="tag">אבטחה</span>
+                        <span class="tag">הדברה</span>
+                        <span class="tag">כל תחום אחר</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary mt-3 glow-effect">השאירו פרטים בדף לקוחות עסקיים</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container margin-auto">
+            <div class="contact-wrapper scroll-reveal">
+                <div class="contact-info">
+                    <div class="section-badge">דברו איתנו</div>
+                    <h2>יצירת קשר</h2>
+                    <p>אנחנו כאן לכל שאלה. דיירים, שוכרים, בעלי נכסים, וספקי שירות.</p>
+
+                    <div class="info-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>התקשרו אלינו</h4>
+                            <a href="tel:046655665" class="contact-link">04-6655665</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-circle">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>ווצאפ</h4>
+                            <a href="https://wa.me/972507275202" class="contact-link">050-7275202</a>
+                            <br>
+                            <a href="https://wa.me/972507273220" class="contact-link">050-7273220</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>זמינות</h4>
+                            <p>ניתן להשאיר פרטים מטה</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>השארת פרטים</h3>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('תודה! פנייתך התקבלה.');">
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="name">שם מלא</label>
+                                <input type="text" id="name" required placeholder="השם שלך">
+                            </div>
+                            <div class="form-group half">
+                                <label for="phone">טלפון</label>
+                                <input type="tel" id="phone" required placeholder="מספר נייד">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">נושא הפנייה</label>
+                            <select id="type">
+                                <option>הצטרפות כבניין (וועד בית)</option>
+                                <option>לקוח עסקי / ספק</option>
+                                <option>שאלה כללית</option>
+                                <option>אחר</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">הודעה</label>
+                            <textarea id="message" rows="4" placeholder="איך אפשר לעזור?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width glow-effect">שלח שדרי</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container margin-auto text-center">
+            <div class="footer-logo">BillClick<span>.</span></div>
+            <p>&copy; 2026 בילקליק (Billclick). כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Elements -->
+    <a href="https://wa.me/972507275202" class="float-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <button class="back-to-top" aria-label="חזור למעלה">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content text-center">
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3>הודעה נשלחה בהצלחה!</h3>
+            <p>תודה, קיבלנו את פנייתך ונחזור אליך בהקדם האפשרי.</p>
+            <button class="btn btn-primary" onclick="closeModal()">סגור</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
