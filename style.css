@@ -313,13 +313,33 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.site-header .logo,
+.site-header .main-nav ul li a {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .site-header.scrolled {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: var(--shadow-sm);
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.site-header.scrolled .logo,
+.site-header.scrolled .main-nav ul li a {
+    color: var(--text-dark);
+    text-shadow: none;
+}
+
+.site-header.scrolled .logo .dot {
+    color: var(--secondary-color);
+}
+
+.site-header.scrolled .main-nav ul li a:hover {
+    color: var(--primary-color);
 }
 
 .header-inner {
@@ -405,90 +425,7 @@ p {
     padding-top: 100px;
 }
 
-/* Floating Elements */
-.floating-elements {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    /* Behind text but above particles */
-}
 
-/* Reset z-index for interaction if needed, but here they are decorative */
-
-.glass-float {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 15px 25px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0 15px 35px rgba(0, 97, 255, 0.15);
-    animation: float var(--float-duration, 6s) ease-in-out infinite;
-}
-
-.float-icon {
-    width: 45px;
-    height: 45px;
-    background: white;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    box-shadow: var(--shadow-sm);
-}
-
-.float-text strong {
-    display: block;
-    color: var(--text-dark);
-    font-size: 0.95rem;
-    line-height: 1.2;
-}
-
-.float-text span {
-    font-size: 0.8rem;
-    color: var(--text-light);
-}
-
-.float-1 {
-    top: 15%;
-    left: 5%;
-    --float-duration: 7s;
-}
-
-.float-2 {
-    bottom: 20%;
-    right: 5%;
-    --float-duration: 8s;
-}
-
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-@media (max-width: 1200px) {
-    .glass-float {
-        display: none;
-        /* Hide on smaller screens to allow text reading */
-    }
-}
 
 .hero-bg {
     position: absolute;
