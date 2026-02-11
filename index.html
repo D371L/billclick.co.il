@@ -530,73 +530,55 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container margin-auto">
-            <div class="contact-wrapper scroll-reveal">
-                <div class="contact-info">
+            <div class="contact-wrapper centered-wrapper">
+                <div class="contact-info full-width-info">
                     <div class="section-badge">דברו איתנו</div>
                     <h2>יצירת קשר</h2>
                     <p>אנחנו כאן לכל שאלה. דיירים, שוכרים, בעלי נכסים, וספקי שירות.</p>
 
-                    <div class="info-item">
-                        <div class="icon-circle">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>התקשרו אלינו</h4>
-                            <a href="tel:046655665" class="contact-link">04-6655665</a>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon-circle">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div>
-                            <h4>ווצאפ</h4>
-                            <a href="https://wa.me/972507275202" class="contact-link">050-7275202</a>
-                            <br>
-                            <a href="https://wa.me/972507273220" class="contact-link">050-7273220</a>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon-circle">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>זמינות</h4>
-                            <p>ניתן להשאיר פרטים מטה</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <h3>השארת פרטים</h3>
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('תודה! פנייתך התקבלה.');">
-                        <div class="form-row">
-                            <div class="form-group half">
-                                <label for="name">שם מלא</label>
-                                <input type="text" id="name" required placeholder="השם שלך">
+                    <div class="contact-grid">
+                        <div class="info-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-phone"></i>
                             </div>
-                            <div class="form-group half">
-                                <label for="phone">טלפון</label>
-                                <input type="tel" id="phone" required placeholder="מספר נייד">
+                            <div>
+                                <h4>התקשרו אלינו</h4>
+                                <a href="tel:046655665" class="contact-link">04-6655665</a>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="type">נושא הפנייה</label>
-                            <select id="type">
-                                <option>הצטרפות כבניין (וועד בית)</option>
-                                <option>לקוח עסקי / ספק</option>
-                                <option>שאלה כללית</option>
-                                <option>אחר</option>
-                            </select>
+
+                        <div class="info-item highlight-whatsapp">
+                            <div class="icon-circle">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>ווצאפ</h4>
+                                <a href="https://wa.me/972507275202" class="contact-link">050-7275202</a>
+                                <br>
+                                <a href="https://wa.me/972507273220" class="contact-link">050-7273220</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="message">הודעה</label>
-                            <textarea id="message" rows="4" placeholder="איך אפשר לעזור?"></textarea>
+
+                        <div class="info-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>אימייל</h4>
+                                <a href="mailto:office@billclick.co.il" class="contact-link">office@billclick.co.il</a>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary full-width glow-effect">שלח שדרי</button>
-                    </form>
+
+                        <div class="info-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>זמינות</h4>
+                                <p>ניתן להשאיר פרטים בוואטסאפ</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
