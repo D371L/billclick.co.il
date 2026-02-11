@@ -11,7 +11,7 @@ It keeps transparency, efficiency, and community at the forefront of residential
 *   **Interactive Particle Network**: A dynamic constellation background effect in the hero section.
 *   **Mobile First**: Fully responsive layout optimized for all devices (iPhone SE to Desktop).
 *   **Animations**: Smooth transitions, floating elements, and count-up statistics.
-*   **Conversion Focused**: Sticky "WhatsApp" button, "Back to Top" navigation, and custom success modals.
+*   **Conversion Focused**: Sticky "WhatsApp" button, Direct Email Integration, and "Back to Top" navigation.
 
 ## 🛠️ Tech Stack
 *   **HTML5** (Semantic & SEO Optimized with JSON-LD)
@@ -29,5 +29,8 @@ It keeps transparency, efficiency, and community at the forefront of residential
 *   **Yehonatan Yifrach** - Founder & Economist
 *   **Kobi Shoshani** - Founder & Investor
 
+## 👨‍💻 Developer
+*   **D371L** - [GitHub](https://github.com/D371L)
+
 ---
-© 2026 BillClick. All rights reserved.
+© 2021 BillClick. All rights reserved.
