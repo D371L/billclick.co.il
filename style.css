@@ -1091,6 +1091,16 @@ p {
     transform: translateY(-5px);
 }
 
+.info-item h4 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
 .highlight-whatsapp {
     background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
     box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
