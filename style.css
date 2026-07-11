@@ -732,39 +732,75 @@ p {
     overflow: hidden;
 }
 
-.apps-container {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 64px;
-    align-items: center;
-}
-
-.apps-content {
+.apps-teaser {
+    position: relative;
     z-index: 2;
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.apps-content h2 {
+.apps-teaser h2 {
     color: white;
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-size: clamp(1.9rem, 3.2vw, 2.75rem);
+    margin-bottom: 0.75rem;
 }
 
-.apps-content h3 {
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+.apps-teaser p {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.1rem;
+    max-width: 540px;
+    margin: 0 auto;
 }
 
-.apps-content p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.05rem;
+.apps-products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 36px 0 28px;
 }
 
-.app-buttons {
+.apps-product {
     display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 32px;
+    flex-direction: column;
+    gap: 6px;
+    padding: 22px 18px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: var(--radius-md);
+    color: white;
+    backdrop-filter: blur(8px);
+    transition: var(--transition);
+}
+
+.apps-product:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.55);
+    transform: translateY(-4px);
+}
+
+.apps-product strong {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.apps-product span {
+    font-size: 0.95rem;
+    opacity: 0.88;
+}
+
+.apps-cta {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+}
+
+.apps-cta:hover {
+    background: #f0f7ff;
+    color: var(--primary-dark);
+    transform: translateY(-2px);
 }
 
 .store-btn {
@@ -777,6 +813,12 @@ p {
     border-radius: 12px;
     color: white;
     transition: var(--transition);
+}
+
+.app-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
 .store-btn:hover {
@@ -803,94 +845,6 @@ p {
 .store-btn span {
     font-weight: 700;
     font-size: 1.05rem;
-}
-
-.phone-mockup {
-    width: 260px;
-    height: 520px;
-    background: #0b1220;
-    border-radius: 36px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.28);
-    padding: 10px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-    transform: rotate(-6deg);
-    transition: var(--transition);
-}
-
-.phone-mockup:hover {
-    transform: rotate(0deg);
-}
-
-.phone-mockup-link {
-    display: inline-block;
-}
-
-.apps-more-btn {
-    margin-top: 20px;
-    border-color: rgba(255, 255, 255, 0.55);
-    color: white;
-}
-
-.apps-more-btn:hover {
-    background: white;
-    color: var(--primary-color);
-    border-color: white;
-}
-
-.notch {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90px;
-    height: 22px;
-    background: #0b1220;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    z-index: 5;
-}
-
-.screen-content {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #f8fafc 0%, #e8f1ff 100%);
-    border-radius: 28px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 28px 20px;
-    gap: 40px;
-}
-
-.app-logo {
-    text-align: center;
-    color: var(--primary-color);
-}
-
-.app-logo i {
-    font-size: 3.2rem;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.app-logo span {
-    font-weight: 800;
-    font-size: 1.35rem;
-    font-family: 'Heebo', sans-serif;
-}
-
-.app-cta-mock {
-    width: 100%;
-    background: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 14px;
-    border-radius: 12px;
-    font-weight: 700;
 }
 
 .apps-wave {
@@ -1321,30 +1275,16 @@ p {
 
 /* Responsive */
 @media (max-width: 992px) {
-    .about-grid,
-    .apps-container {
-        grid-template-columns: 1fr;
-    }
-
     .about-grid {
+        grid-template-columns: 1fr;
         gap: 36px;
     }
 
-    .apps-container {
-        gap: 48px;
-        text-align: center;
-    }
-
-    .apps-visual {
-        order: 2;
-    }
-
-    .apps-content {
-        order: 1;
-    }
-
-    .app-buttons {
-        justify-content: center;
+    .apps-products {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .services-grid {
@@ -1362,12 +1302,6 @@ p {
     .hero {
         min-height: auto;
         padding-bottom: 100px;
-    }
-
-    .phone-mockup {
-        transform: none;
-        width: 230px;
-        height: 460px;
     }
 }
 
