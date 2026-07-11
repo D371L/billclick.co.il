@@ -1587,13 +1587,11 @@ p {
 .vb-phone-shot {
     max-width: 280px;
     width: 100%;
-    border-radius: 28px;
-    box-shadow: 0 28px 56px rgba(0, 0, 0, 0.35);
+    background: transparent;
 }
 
 .vb-hero-shot {
-    max-width: 420px;
-    border-radius: 24px;
+    max-width: 440px;
 }
 
 .vb-phone-shot-sm {
@@ -1631,11 +1629,10 @@ p {
 }
 
 .vb-bit-phone {
-    max-width: 420px;
+    max-width: 440px;
     width: 100%;
     height: auto;
-    border-radius: 24px;
-    filter: drop-shadow(0 28px 48px rgba(15, 23, 42, 0.18));
+    background: transparent;
 }
 
 .vb-bit-copy .section-badge,
@@ -1741,7 +1738,7 @@ p {
 .vb-bit-phones img {
     max-width: 200px;
     width: 100%;
-    filter: drop-shadow(0 16px 32px rgba(15, 23, 42, 0.12));
+    background: transparent;
 }
 
 .vb-split {
