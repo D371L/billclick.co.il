@@ -1179,25 +1179,6 @@ p {
     color: var(--secondary-color);
 }
 
-.footer-legal-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 24px;
-    margin: 18px 0 0;
-}
-
-.footer-legal-links a {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.9rem;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.footer-legal-links a:hover {
-    color: white;
-}
-
 /* Motion */
 .scroll-reveal {
     opacity: 0;
