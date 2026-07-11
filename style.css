@@ -1628,6 +1628,16 @@ p {
     text-align: right;
 }
 
+.vb-bit-logo {
+    display: block;
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.25rem;
+    margin-right: 0;
+    margin-left: auto;
+}
+
 .vb-bit-phone {
     max-width: 440px;
     width: 100%;
@@ -1764,11 +1774,12 @@ p {
 }
 
 .vb-alexy-img {
-    max-width: 420px;
+    max-width: 440px;
     width: 100%;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    object-fit: cover;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    object-fit: contain;
 }
 
 .vb-inline-logo {
@@ -1979,6 +1990,10 @@ p {
 
     .vb-bit-copy {
         text-align: center;
+    }
+
+    .vb-bit-logo {
+        margin-inline: auto;
     }
 
     .vb-bit-copy > p {
