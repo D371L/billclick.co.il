@@ -55,7 +55,7 @@
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <meta property="og:title" content="BillClick - ניהול וועד בית מתקדם">
     <meta property="og:description" content="הפתרון החכם לניהול וועד הבית. שקיפות, חיסכון ונוחות באפליקציה אחת.">
-    <meta property="og:image" content="https://billclick.co.il/og-image.jpg"> <!-- Placeholder for now -->
+    <meta property="og:image" content="https://billclick.co.il/assets/favicon.svg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://billclick.co.il">
 
@@ -107,27 +107,23 @@
     <section class="hero" id="home">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
-        <!-- Particle Canvas -->
-        <canvas id="hero-particles"></canvas>
+        <div class="hero-pattern" aria-hidden="true"></div>
         <div class="container margin-auto relative z-10">
             <div class="hero-content fade-in-up">
-                <h1 data-i18n="heroTitle">ניהול וועד הבית <br><span>מעולם לא היה פשוט יותר</span></h1>
-                <p class="hero-subtitle" data-i18n="heroSubtitle">שירותי ניהול, גבייה, ותחזוקה מתקדמים לבנייני מגורים.
+                <div class="hero-brand">BillClick<span class="dot">.</span></div>
+                <h1>ניהול וועד הבית <br><span>מעולם לא היה פשוט יותר</span></h1>
+                <p class="hero-subtitle">שירותי ניהול, גבייה, ותחזוקה מתקדמים לבנייני מגורים.
                     שקט נפשי, שקיפות מלאה, וחיסכון בעלויות.</p>
 
                 <div class="hero-cta">
-                    <a href="#contact" class="btn btn-lg btn-primary glow-effect">מתחילים עכשיו</a>
+                    <a href="#contact" class="btn btn-lg btn-primary">מתחילים עכשיו</a>
                     <a href="#about" class="btn btn-lg btn-outline">קרא עוד</a>
                 </div>
             </div>
         </div>
 
-
-
-        <!-- SVG Wave Divider -->
-        <div class="custom-shape-divider-bottom-1689970993">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
+        <div class="hero-wave" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path
                     d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                     class="shape-fill"></path>
@@ -155,7 +151,7 @@
                         מחסור בשקיפות, התנהלות לקויה, חוסר וודאות וכד' עשויים לגרור חובות, תקלות המצטברות לאורך זמן,
                         ולעיתים גם הוצאות גבוהות ובלתי צפויות.
                     </p>
-                    <div class="glass-box highlight-text">
+                    <div class="highlight-text">
                         <strong>בשביל זה אנחנו כאן!</strong> אצלנו תקבלו שירותי מקצועי ואדיב, שקיפות מלאה, הצעות ייעול
                         והתנהלות על הצד הטוב ביותר!
                     </div>
@@ -190,32 +186,34 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Founders Section -->
-            <div class="founders-section text-center mt-4 scroll-reveal">
-                <div class="section-badge">הנהלה</div>
-                <h2>המייסדים שלנו</h2>
-                <div class="founders-grid">
-                    <div class="founder-card glass-box">
-                        <img src="assets/yi.jpg" alt="יפרח יהונתן" class="founder-img">
-                        <h3>מייסד: יפרח יהונתן</h3>
-                        <p class="role">יזם, כלכלן בכיר</p>
-                        <p>ייעוץ כלכלי, ניהול דו"חות פיננסיים, ודו"חות חברה. מעל 5 שנות וותק בחברת הייטק גדולה בישראל.
-                        </p>
-                    </div>
-                    <div class="founder-card glass-box">
-                        <img src="assets/ks.jpg" alt="שושני קובי" class="founder-img">
-                        <h3>מייסד: שושני קובי</h3>
-                        <p class="role">איש עסקים, משקיע</p>
-                        <p>בעל עסק פורה מעל עשור, רחב אופקים. בעל קשרי לקוחות מסחריים רחב.</p>
-                    </div>
+    <!-- Founders Section -->
+    <section class="section founders-section" id="founders">
+        <div class="container margin-auto text-center">
+            <div class="section-badge">הנהלה</div>
+            <h2 class="scroll-reveal">המייסדים שלנו</h2>
+            <div class="founders-grid">
+                <div class="founder-card scroll-reveal">
+                    <img src="assets/yi.jpg" alt="יפרח יהונתן" class="founder-img">
+                    <h3>מייסד: יפרח יהונתן</h3>
+                    <p class="role">יזם, כלכלן בכיר</p>
+                    <p>ייעוץ כלכלי, ניהול דו"חות פיננסיים, ודו"חות חברה. מעל 5 שנות וותק בחברת הייטק גדולה בישראל.
+                    </p>
+                </div>
+                <div class="founder-card scroll-reveal">
+                    <img src="assets/ks.jpg" alt="שושני קובי" class="founder-img">
+                    <h3>מייסד: שושני קובי</h3>
+                    <p class="role">איש עסקים, משקיע</p>
+                    <p>בעל עסק פורה מעל עשור, רחב אופקים. בעל קשרי לקוחות מסחריים רחב.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <div class="stats-section mt-4">
+    <section class="stats-section">
         <div class="container margin-auto">
             <h2 class="stats-title scroll-reveal">המספרים מדברים בעד עצמם</h2>
             <div class="stats-grid">
@@ -233,7 +231,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="section services-section">
@@ -247,7 +245,6 @@
             <div class="services-grid">
                 <!-- Cleaning -->
                 <div class="service-card scroll-reveal">
-                    <div class="card-bg-shape"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-broom"></i>
                     </div>
@@ -265,7 +262,6 @@
 
                 <!-- Elevators -->
                 <div class="service-card scroll-reveal">
-                    <div class="card-bg-shape"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-elevator"></i>
                     </div>
@@ -281,7 +277,6 @@
 
                 <!-- Gardening -->
                 <div class="service-card scroll-reveal">
-                    <div class="card-bg-shape"></div>
                     <div class="icon-wrapper">
                         <i class="fa-brands fa-pagelines"></i>
                     </div>
@@ -297,7 +292,6 @@
 
                 <!-- Maintenance -->
                 <div class="service-card scroll-reveal">
-                    <div class="card-bg-shape"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                     </div>
@@ -313,7 +307,6 @@
 
                 <!-- Insurance -->
                 <div class="service-card scroll-reveal">
-                    <div class="card-bg-shape"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-shield-heart"></i>
                     </div>
@@ -329,7 +322,6 @@
 
                 <!-- More Services -->
                 <div class="service-card scroll-reveal">
-                    <div class="card-bg-shape"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-plus-circle"></i>
                     </div>
@@ -371,7 +363,7 @@
                     </p>
                     <div class="app-buttons">
                         <a href="https://play.google.com/store/search?q=vaadbot&c=apps&hl=en" target="_blank"
-                            class="store-btn google-play fa-bounce-hover">
+                            class="store-btn google-play">
                             <i class="fa-brands fa-google-play"></i>
                             <div>
                                 <small>הורד עכשיו ב-</small>
@@ -379,7 +371,7 @@
                             </div>
                         </a>
                         <a href="https://apps.apple.com/il/app/vaadbot/id6475007894?l=he" target="_blank"
-                            class="store-btn app-store fa-bounce-hover">
+                            class="store-btn app-store">
                             <i class="fa-brands fa-apple"></i>
                             <div>
                                 <small>זמין גם ב-</small>
@@ -389,7 +381,6 @@
                     </div>
                 </div>
                 <div class="apps-visual">
-                    <!-- CSS Only Phone Mockup -->
                     <div class="phone-mockup">
                         <div class="notch"></div>
                         <div class="screen-content">
@@ -397,10 +388,6 @@
                                 <i class="fa-solid fa-building-user"></i>
                                 <span>VaadBot</span>
                             </div>
-                            <div class="app-ui-row"></div>
-                            <div class="app-ui-row short"></div>
-                            <div class="app-ui-card"></div>
-                            <div class="app-ui-card"></div>
                             <div class="app-cta-mock">הורד עכשיו</div>
                         </div>
                     </div>
@@ -408,10 +395,8 @@
             </div>
         </div>
 
-        <!-- Bottom Wave -->
-        <div class="custom-shape-divider-bottom-apps">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
+        <div class="apps-wave" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path
                     d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
                     class="shape-fill"></path>
@@ -503,7 +488,7 @@
     <!-- Suppliers / Business Section -->
     <section id="suppliers" class="section suppliers-section">
         <div class="container text-center scroll-reveal">
-            <div class="suppliers-card glass-box">
+            <div class="suppliers-card">
                 <h2>ספקים יקרים, <span class="text-primary">Alexy</span> כאן גם בשבילכם!</h2>
                 <p class="subtitle">העוזרת האישית שלכם מול וועדי הבתים וכל לקוח אחר</p>
                 <div class="suppliers-content">
@@ -517,7 +502,7 @@
                         <span class="tag">הדברה</span>
                         <span class="tag">כל תחום אחר</span>
                     </div>
-                    <a href="#contact" class="btn btn-primary mt-3 glow-effect">השאירו פרטים בדף לקוחות עסקיים</a>
+                    <a href="#contact" class="btn btn-primary mt-3">צרו קשר</a>
                 </div>
             </div>
         </div>
@@ -526,23 +511,13 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container margin-auto">
-            <div class="contact-wrapper centered-wrapper">
-                <div class="contact-info full-width-info">
+            <div class="contact-wrapper scroll-reveal">
+                <div class="contact-info">
                     <div class="section-badge">דברו איתנו</div>
                     <h2>יצירת קשר</h2>
                     <p>אנחנו כאן לכל שאלה. דיירים, שוכרים, בעלי נכסים, וספקי שירות.</p>
 
                     <div class="contact-grid">
-                        <div class="info-item">
-                            <div class="icon-circle">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>התקשרו אלינו</h4>
-                                <a href="tel:046655665" class="contact-link">04-6655665</a>
-                            </div>
-                        </div>
-
                         <div class="info-item highlight-whatsapp">
                             <div class="icon-circle">
                                 <i class="fa-brands fa-whatsapp"></i>
@@ -552,6 +527,16 @@
                                 <a href="https://wa.me/972507275202" class="contact-link">050-7275202</a>
                                 <br>
                                 <a href="https://wa.me/972507273220" class="contact-link">050-7273220</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>התקשרו אלינו</h4>
+                                <a href="tel:046655665" class="contact-link">04-6655665</a>
                             </div>
                         </div>
 
@@ -595,18 +580,6 @@
     <button class="back-to-top" aria-label="חזור למעלה">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
-
-    <!-- Success Modal -->
-    <div id="successModal" class="modal">
-        <div class="modal-content text-center">
-            <div class="success-icon">
-                <i class="fa-solid fa-check"></i>
-            </div>
-            <h3>הודעה נשלחה בהצלחה!</h3>
-            <p>תודה, קיבלנו את פנייתך ונחזור אליך בהקדם האפשרי.</p>
-            <button class="btn btn-primary" onclick="closeModal()">סגור</button>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
