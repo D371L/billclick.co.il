@@ -539,8 +539,8 @@ p {
 
 .founders-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 320px));
-    gap: 40px;
+    grid-template-columns: repeat(4, minmax(0, 260px));
+    gap: 28px;
     margin-top: 40px;
     justify-content: center;
 }
@@ -1349,6 +1349,10 @@ p {
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .founders-grid {
+        grid-template-columns: repeat(2, minmax(0, 280px));
     }
 
     .contact-info {
