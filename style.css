@@ -823,6 +823,22 @@ p {
     transform: rotate(0deg);
 }
 
+.phone-mockup-link {
+    display: inline-block;
+}
+
+.apps-more-btn {
+    margin-top: 20px;
+    border-color: rgba(255, 255, 255, 0.55);
+    color: white;
+}
+
+.apps-more-btn:hover {
+    background: white;
+    color: var(--primary-color);
+    border-color: white;
+}
+
 .notch {
     position: absolute;
     top: 10px;
@@ -1490,5 +1506,385 @@ p {
     .scroll-reveal {
         opacity: 1;
         transform: none;
+    }
+}
+
+/* ========== VaadBot page ========== */
+.vb-page .site-header.vb-header:not(.scrolled) {
+    background: transparent;
+}
+
+.nav-active {
+    color: var(--accent-color) !important;
+    font-weight: 700 !important;
+}
+
+.site-header.scrolled .nav-active {
+    color: var(--primary-color) !important;
+}
+
+.vb-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    color: white;
+    overflow: hidden;
+}
+
+.vb-hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 70% 50% at 80% 20%, rgba(0, 198, 255, 0.3) 0%, transparent 55%),
+        linear-gradient(160deg, #071428 0%, #0a2a6b 50%, #0052d6 100%);
+    z-index: 0;
+}
+
+.vb-hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.vb-logo-img {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+.vb-hero h1 {
+    color: white;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1.25rem;
+}
+
+.vb-lead {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    max-width: 540px;
+}
+
+.vb-store-row {
+    margin-top: 0;
+}
+
+.vb-store-center {
+    justify-content: center;
+}
+
+.vb-hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.vb-phone-shot {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: 0 28px 56px rgba(0, 0, 0, 0.35);
+}
+
+.vb-phone-shot-sm {
+    max-width: 220px;
+    margin-top: 16px;
+}
+
+.vb-alexy {
+    background: white;
+}
+
+.vb-payments {
+    background: var(--bg-light);
+}
+
+.vb-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+}
+
+.vb-split-reverse .vb-split-text {
+    order: 1;
+}
+
+.vb-split-reverse .vb-split-media {
+    order: 2;
+}
+
+.vb-split-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.vb-alexy-img {
+    max-width: 360px;
+    width: 100%;
+    border-radius: var(--radius-lg);
+}
+
+.vb-inline-logo {
+    max-width: 220px;
+    margin-bottom: 1rem;
+}
+
+.vb-banner-img {
+    max-width: 420px;
+    width: 100%;
+}
+
+.vb-more-link a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.vb-pillars {
+    background: white;
+}
+
+.vb-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+    text-align: right;
+}
+
+.vb-pillar-card {
+    background: var(--bg-light);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: var(--transition);
+}
+
+.vb-pillar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(0, 97, 255, 0.18);
+}
+
+.vb-pillar-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(0, 97, 255, 0.08);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    margin-bottom: 16px;
+}
+
+.vb-pillar-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.vb-pillar-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.vb-audiences {
+    background: var(--bg-light);
+}
+
+.vb-intro {
+    max-width: 720px;
+    margin: 0 auto 40px;
+}
+
+.vb-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.vb-audience-card {
+    background: white;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+}
+
+.vb-audience-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.vb-audience-card ul {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.vb-audience-card li {
+    position: relative;
+    padding-right: 18px;
+    margin-bottom: 8px;
+    font-size: 0.92rem;
+    color: var(--text-medium);
+}
+
+.vb-audience-card li::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+.vb-gallery {
+    background: white;
+}
+
+.vb-gallery-track {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.vb-gallery-track img {
+    width: 180px;
+    border-radius: 22px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.vb-gallery-track img:hover {
+    transform: translateY(-6px);
+}
+
+.vb-cta {
+    background: linear-gradient(160deg, #071428 0%, #0a2a6b 55%, #0052d6 100%);
+    color: white;
+    text-align: center;
+}
+
+.vb-cta h2,
+.vb-cta p {
+    color: white;
+}
+
+.vb-cta p {
+    opacity: 0.88;
+    margin-bottom: 1.5rem;
+}
+
+.vb-cta-banner {
+    max-width: 320px;
+    margin: 0 auto 1.5rem;
+    filter: brightness(0) invert(1);
+}
+
+.vb-back-btn {
+    margin-top: 28px;
+    border-color: rgba(255, 255, 255, 0.55);
+    color: white;
+}
+
+.vb-back-btn:hover {
+    background: white;
+    color: var(--primary-color);
+    border-color: white;
+}
+
+.vb-footer .vb-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+    margin: 18px 0 12px;
+}
+
+.vb-footer .vb-legal-links a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.vb-footer .vb-legal-links a:hover {
+    color: white;
+}
+
+.vb-copy {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .vb-hero-grid,
+    .vb-split,
+    .vb-pillars-grid,
+    .vb-audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vb-split-reverse .vb-split-text,
+    .vb-split-reverse .vb-split-media {
+        order: initial;
+    }
+
+    .vb-hero {
+        min-height: auto;
+        padding-top: 110px;
+        text-align: center;
+    }
+
+    .vb-lead {
+        margin-inline: auto;
+    }
+
+    .vb-store-row {
+        justify-content: center;
+    }
+
+    .vb-logo-img {
+        margin-inline: auto;
+    }
+
+    .vb-pillars-grid,
+    .vb-audience-card {
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    .vb-gallery-track {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 12px;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+
+    .vb-gallery-track img {
+        flex: 0 0 160px;
+        scroll-snap-align: start;
+    }
+
+    .vb-phone-shot {
+        max-width: 220px;
     }
 }
