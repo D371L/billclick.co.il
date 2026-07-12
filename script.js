@@ -108,6 +108,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Hero phone stack rotation ---
+    (function initHeroPhones() {
+        const phones = Array.from(document.querySelectorAll('.hero-phones .hero-phone'));
+        if (phones.length < 2) return;
+
+        const roles = ['is-front', 'is-mid', 'is-back', 'is-far'];
+
+        const applyRoles = (offset) => {
+            phones.forEach((phone, index) => {
+                phone.classList.remove(...roles);
+                const roleIndex = (index - offset + phones.length) % phones.length;
+                phone.classList.add(roles[Math.min(roleIndex, roles.length - 1)]);
+            });
+        };
+
+        applyRoles(0);
+
+        if (prefersReducedMotion) return;
+
+        let offset = 0;
+        let timer = null;
+
+        const stop = () => {
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+            }
+        };
+
+        const start = () => {
+            if (timer || document.hidden) return;
+            timer = setInterval(() => {
+                offset = (offset + 1) % phones.length;
+                applyRoles(offset);
+            }, 3500);
+        };
+
+        start();
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) stop();
+            else start();
+        });
+    })();
+
     // --- Stats Counter ---
     const statsSection = document.querySelector('.stats-section');
     if (statsSection) {

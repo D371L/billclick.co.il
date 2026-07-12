@@ -489,40 +489,60 @@ p {
     position: relative;
     z-index: 1;
     display: block;
-    width: min(360px, 100%);
-    height: 420px;
+    width: min(380px, 100%);
+    height: 440px;
 }
 
 .hero-phone {
     position: absolute;
     height: auto;
-    filter: drop-shadow(0 24px 40px rgba(0, 15, 50, 0.45));
-    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 54%;
+    inset-inline-start: 23%;
+    top: 6%;
+    filter: drop-shadow(0 22px 36px rgba(0, 15, 50, 0.4));
+    transition:
+        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        top 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+        inset-inline-start 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, opacity;
 }
 
-.hero-phone-back {
-    width: 52%;
-    inset-inline-end: 4%;
-    top: 8%;
-    transform: rotate(-10deg);
-    opacity: 0.92;
-    z-index: 1;
-}
-
-.hero-phone-front {
+.hero-phone.is-front {
     width: 58%;
-    inset-inline-start: 6%;
+    inset-inline-start: 8%;
     top: 0;
-    transform: rotate(4deg);
+    transform: rotate(5deg) scale(1);
+    opacity: 1;
+    z-index: 4;
+}
+
+.hero-phone.is-mid {
+    width: 52%;
+    inset-inline-start: 38%;
+    top: 6%;
+    transform: rotate(-9deg) scale(0.94);
+    opacity: 0.95;
+    z-index: 3;
+}
+
+.hero-phone.is-back {
+    width: 46%;
+    inset-inline-start: 2%;
+    top: 14%;
+    transform: rotate(-16deg) scale(0.88);
+    opacity: 0.72;
     z-index: 2;
 }
 
-.hero-phones:hover .hero-phone-back {
-    transform: rotate(-7deg) translateY(-4px);
-}
-
-.hero-phones:hover .hero-phone-front {
-    transform: rotate(2deg) translateY(-8px);
+.hero-phone.is-far {
+    width: 42%;
+    inset-inline-start: 48%;
+    top: 18%;
+    transform: rotate(12deg) scale(0.82);
+    opacity: 0.55;
+    z-index: 1;
 }
 
 .hero-wave {
@@ -1402,15 +1422,14 @@ p {
         justify-content: center;
     }
 
-    .hero-product-link {
-        max-width: 300px;
+    .hero-phones {
+        width: min(300px, 92%);
+        height: 360px;
         margin: 0 auto;
     }
 
-    .hero-phones {
-        width: min(280px, 90%);
-        height: 340px;
-        margin: 0 auto;
+    .hero-phone.is-far {
+        opacity: 0.35;
     }
 }
 
