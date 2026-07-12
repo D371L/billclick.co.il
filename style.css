@@ -469,19 +469,60 @@ p {
 .hero-visual {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.hero-product-link {
+.hero-visual::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(96, 239, 255, 0.35) 0%, transparent 70%);
+    filter: blur(8px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-phones {
+    position: relative;
+    z-index: 1;
     display: block;
-    max-width: 400px;
-    width: 100%;
+    width: min(360px, 100%);
+    height: 420px;
 }
 
-.hero-product-img {
-    width: 100%;
+.hero-phone {
+    position: absolute;
     height: auto;
-    border-radius: 28px;
-    box-shadow: 0 28px 60px rgba(0, 20, 60, 0.35);
+    filter: drop-shadow(0 24px 40px rgba(0, 15, 50, 0.45));
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-phone-back {
+    width: 52%;
+    inset-inline-end: 4%;
+    top: 8%;
+    transform: rotate(-10deg);
+    opacity: 0.92;
+    z-index: 1;
+}
+
+.hero-phone-front {
+    width: 58%;
+    inset-inline-start: 6%;
+    top: 0;
+    transform: rotate(4deg);
+    z-index: 2;
+}
+
+.hero-phones:hover .hero-phone-back {
+    transform: rotate(-7deg) translateY(-4px);
+}
+
+.hero-phones:hover .hero-phone-front {
+    transform: rotate(2deg) translateY(-8px);
 }
 
 .hero-wave {
@@ -1363,6 +1404,12 @@ p {
 
     .hero-product-link {
         max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero-phones {
+        width: min(280px, 90%);
+        height: 340px;
         margin: 0 auto;
     }
 }
