@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const phones = Array.from(document.querySelectorAll('.hero-phones .hero-phone'));
         if (phones.length < 2) return;
 
-        const roles = ['is-front', 'is-mid', 'is-back', 'is-far'];
+        const roles = ['is-front', 'is-right', 'is-back', 'is-left'];
 
         const applyRoles = (offset) => {
             phones.forEach((phone, index) => {

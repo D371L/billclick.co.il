@@ -501,48 +501,48 @@ p {
     top: 6%;
     filter: drop-shadow(0 22px 36px rgba(0, 15, 50, 0.4));
     transition:
-        transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        width 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        top 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-        inset-inline-start 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        transform 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+        top 0.75s cubic-bezier(0.4, 0, 0.2, 1),
+        inset-inline-start 0.75s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform, opacity;
 }
 
 .hero-phone.is-front {
     width: 58%;
-    inset-inline-start: 8%;
+    inset-inline-start: 22%;
     top: 0;
-    transform: rotate(5deg) scale(1);
+    transform: rotate(3deg) scale(1);
     opacity: 1;
     z-index: 4;
 }
 
-.hero-phone.is-mid {
-    width: 52%;
-    inset-inline-start: 38%;
-    top: 6%;
-    transform: rotate(-9deg) scale(0.94);
-    opacity: 0.95;
+.hero-phone.is-right {
+    width: 50%;
+    inset-inline-start: 42%;
+    top: 8%;
+    transform: rotate(-8deg) scale(0.9);
+    opacity: 0.88;
     z-index: 3;
 }
 
 .hero-phone.is-back {
-    width: 46%;
-    inset-inline-start: 2%;
-    top: 14%;
-    transform: rotate(-16deg) scale(0.88);
-    opacity: 0.72;
-    z-index: 2;
-}
-
-.hero-phone.is-far {
-    width: 42%;
-    inset-inline-start: 48%;
-    top: 18%;
-    transform: rotate(12deg) scale(0.82);
+    width: 44%;
+    inset-inline-start: 28%;
+    top: 16%;
+    transform: rotate(0deg) scale(0.8);
     opacity: 0.55;
     z-index: 1;
+}
+
+.hero-phone.is-left {
+    width: 50%;
+    inset-inline-start: 4%;
+    top: 8%;
+    transform: rotate(10deg) scale(0.9);
+    opacity: 0.88;
+    z-index: 2;
 }
 
 .hero-wave {
@@ -1428,8 +1428,8 @@ p {
         margin: 0 auto;
     }
 
-    .hero-phone.is-far {
-        opacity: 0.35;
+    .hero-phone.is-back {
+        opacity: 0.4;
     }
 }
 
