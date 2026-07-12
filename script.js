@@ -1,19 +1,23 @@
 // --- Preloader ---
-window.addEventListener('load', () => {
+(function () {
     const preloader = document.getElementById('preloader');
-    if (preloader) {
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-        }, 400);
-    }
-});
+    if (!preloader) return;
 
-setTimeout(() => {
-    const preloader = document.getElementById('preloader');
-    if (preloader && !preloader.classList.contains('fade-out')) {
+    const skip = sessionStorage.getItem('bc-seen') === '1';
+    const hide = () => {
         preloader.classList.add('fade-out');
+        sessionStorage.setItem('bc-seen', '1');
+    };
+
+    if (skip) {
+        preloader.classList.add('fade-out');
+        preloader.style.display = 'none';
+        return;
     }
-}, 2500);
+
+    window.addEventListener('load', () => setTimeout(hide, 120));
+    setTimeout(hide, 800);
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -60,8 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Accordion ---
     document.querySelectorAll('.accordion-header').forEach(acc => {
+        acc.setAttribute('aria-expanded', 'false');
         acc.addEventListener('click', function () {
+            const isOpen = this.classList.contains('active');
             this.classList.toggle('active');
+            this.setAttribute('aria-expanded', String(!isOpen));
             const content = this.nextElementSibling;
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;

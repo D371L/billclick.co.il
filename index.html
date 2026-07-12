@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800;900&family=Rubik:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
     <!-- JSON-LD SEO Structure -->
@@ -97,7 +97,7 @@
                     <ul>
                         <li><a href="#about">אודות</a></li>
                         <li><a href="#services">שירותים</a></li>
-                        <li><a href="vaadbot/">אפליקציות</a></li>
+                        <li><a href="#apps">אפליקציות</a></li>
                         <li><a href="#faq">שאלות ותשובות</a></li>
                         <li><a href="#suppliers">ספקים</a></li>
                         <li class="mobile-link"><a href="#contact">צור קשר</a></li>
@@ -121,15 +121,23 @@
         <div class="hero-overlay"></div>
         <div class="hero-pattern" aria-hidden="true"></div>
         <div class="container margin-auto relative z-10">
-            <div class="hero-content fade-in-up">
-                <div class="hero-brand">BillClick<span class="dot">.</span></div>
-                <h1>ניהול וועד הבית <br><span>מעולם לא היה פשוט יותר</span></h1>
-                <p class="hero-subtitle">שירותי ניהול, גבייה, ותחזוקה מתקדמים לבנייני מגורים.
-                    שקט נפשי, שקיפות מלאה, וחיסכון בעלויות.</p>
+            <div class="hero-layout fade-in-up">
+                <div class="hero-content">
+                    <div class="hero-brand">BillClick<span class="dot">.</span></div>
+                    <h1>ניהול וועד הבית מעולם לא היה פשוט יותר</h1>
+                    <p class="hero-subtitle">שירותי ניהול, גבייה, ותחזוקה מתקדמים לבנייני מגורים.
+                        שקט נפשי, שקיפות מלאה, וחיסכון בעלויות.</p>
 
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-lg btn-primary">מתחילים עכשיו</a>
-                    <a href="#about" class="btn btn-lg btn-outline">קרא עוד</a>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-lg btn-primary">מתחילים עכשיו</a>
+                        <a href="#about" class="hero-text-link">קרא עוד</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <a href="vaadbot/" class="hero-product-link" aria-label="האפליקציות שלנו">
+                        <img src="assets/vaadbot/vaadbot-hero.gif" alt="מסך אפליקציית VaadBot" class="hero-product-img"
+                            width="420" height="420">
+                    </a>
                 </div>
             </div>
         </div>
@@ -146,8 +154,8 @@
     <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="container margin-auto">
-            <div class="section-badge text-center">מי אנחנו?</div>
-            <div class="section-title text-center scroll-reveal">
+            <div class="section-header text-center scroll-reveal">
+                <div class="section-badge">מי אנחנו?</div>
                 <h2>קצת עלינו</h2>
             </div>
 
@@ -204,8 +212,10 @@
     <!-- Founders Section -->
     <section class="section founders-section" id="founders">
         <div class="container margin-auto text-center">
-            <div class="section-badge">הנהלה</div>
-            <h2 class="scroll-reveal">הצוות שלנו</h2>
+            <div class="section-header text-center scroll-reveal">
+                <div class="section-badge">הנהלה</div>
+                <h2>הצוות שלנו</h2>
+            </div>
             <div class="founders-grid">
                 <div class="founder-card scroll-reveal">
                     <img src="assets/yi.jpg" alt="יפרח יהונתן" class="founder-img">
@@ -277,10 +287,8 @@
                     <ul class="service-list">
                         <li>שטיפת קומת הכניסה: לובי + מעליות</li>
                         <li>ניקיון קומתי ושטחים משותפים בכל קומה</li>
-                        <li>ניקוי חלונות ויטרינה, מסילות והברקת מעליות</li>
-                        <li>הברקת ריהוט, דקורציה ומערכות אינטרקום</li>
-                        <li>שטיפה וניקיון יסודי של חדרי המדרגות</li>
-                        <li><strong>ניקיון חניונים (בתוספת נפרדת)</strong></li>
+                        <li>ניקוי חלונות ויטרינה והברקת מעליות</li>
+                        <li class="service-more">ועוד</li>
                     </ul>
                 </div>
 
@@ -294,8 +302,8 @@
                     <ul class="service-list">
                         <li>הסכם מול חברות מעליות מוסמכות ומרושיינות</li>
                         <li>ניהול התקשרות מול החברה במקרי תקלה</li>
-                        <li>חידוש חוזה שנתי בהתאם לבקשה</li>
-                        <li>סקר חצי שנתי/שנתי לבדיקת הוזלת עלויות</li>
+                        <li>סקר תקופתי לבדיקת הוזלת עלויות</li>
+                        <li class="service-more">ועוד</li>
                     </ul>
                 </div>
 
@@ -310,7 +318,7 @@
                         <li>גנני חוץ לחוות דעת ראשונית והצעות</li>
                         <li>טיפוח הגינה וגיזום שוטף</li>
                         <li>טיפול במערכות השקיה</li>
-                        <li>עלות קבועה וידועה מראש</li>
+                        <li class="service-more">ועוד</li>
                     </ul>
                 </div>
 
@@ -325,7 +333,7 @@
                         <li>בדיקות מעליות ומשאבות תקופתיות</li>
                         <li>ביקורת מערכות (אבטחה, אש, ספרינקלרים)</li>
                         <li>החלפת נורות ותיקונים כלליים</li>
-                        <li>התקנות, הובלה והרכבת ריהוט</li>
+                        <li class="service-more">ועוד</li>
                     </ul>
                 </div>
 
@@ -337,10 +345,10 @@
                     <h3>ביטוחים</h3>
                     <p class="short-desc">חיסכון בעלויות עתידיות והגנה במקרים בלתי צפויים.</p>
                     <ul class="service-list">
-                        <li>חברות באגודה + ביטוח צד ג' וחבות מעבידים (כלול)</li>
+                        <li>חברות באגודה + ביטוח צד ג' וחבות מעבידים</li>
                         <li>ביטוח מבנה ותכולה משותפת (סל מורחב)</li>
-                        <li>ביטוח נזקי צנרת, אש ורעידות אדמה (סל מורחב)</li>
-                        <li>ליווי בהתנהלות מול חברות הביטוח להחזר כספי</li>
+                        <li>ליווי מול חברות הביטוח להחזר כספי</li>
+                        <li class="service-more">ועוד</li>
                     </ul>
                 </div>
 
@@ -354,8 +362,8 @@
                     <ul class="service-list">
                         <li>הדברה חצי שנתית/שנתית והרחקת יונים</li>
                         <li>גידור, מצלמות אבטחה ושירותי שמירה</li>
-                        <li>טיפוח חדר כושר, גינת משחקים וג'ימבורי</li>
-                        <li>מוזיקה בלובי ושדרוגים (דלת כניסה, אינטרקום)</li>
+                        <li>טיפוח חדר כושר וגינת משחקים</li>
+                        <li class="service-more">ועוד</li>
                     </ul>
                 </div>
             </div>
@@ -382,11 +390,11 @@
                         <strong>VaadBot</strong>
                         <span>ניהול ועד בית</span>
                     </a>
-                    <a href="vaadbot/" class="apps-product">
+                    <a href="vaadbot/#alexy" class="apps-product">
                         <strong>Alexy</strong>
                         <span>עוזרת דיגיטלית</span>
                     </a>
-                    <a href="vaadbot/" class="apps-product">
+                    <a href="vaadbot/#vaadbit" class="apps-product">
                         <strong>VaadBit</strong>
                         <span>תשלומים וגבייה</span>
                     </a>
@@ -407,8 +415,8 @@
     <!-- FAQ Section -->
     <section id="faq" class="section faq-section">
         <div class="container margin-auto">
-            <div class="section-badge">ידע זה כוח</div>
-            <div class="section-title text-center scroll-reveal">
+            <div class="section-header text-center scroll-reveal">
+                <div class="section-badge">ידע זה כוח</div>
                 <h2>שאלות ותשובות</h2>
                 <p>כל מה שרציתם לדעת ולא העזתם לשאול</p>
             </div>
@@ -487,24 +495,13 @@
 
     <!-- Suppliers / Business Section -->
     <section id="suppliers" class="section suppliers-section">
-        <div class="container text-center scroll-reveal">
-            <div class="suppliers-card">
-                <h2>ספקים יקרים, <span class="text-primary">Alexy</span> כאן גם בשבילכם!</h2>
-                <p class="subtitle">העוזרת האישית שלכם מול וועדי הבתים וכל לקוח אחר</p>
-                <div class="suppliers-content">
-                    <p class="lead">לקוחות עסקיים? עוסקים מורשים? חברות?</p>
-                    <p>גם אתם מוזמנים לפנות אלינו לשימור כל מבנה קיים.</p>
-                    <div class="tags-container">
-                        <span class="tag">ניקיון</span>
-                        <span class="tag">גינון</span>
-                        <span class="tag">מעליות</span>
-                        <span class="tag">אבטחה</span>
-                        <span class="tag">הדברה</span>
-                        <span class="tag">כל תחום אחר</span>
-                    </div>
-                    <a href="#contact" class="btn btn-primary mt-3">צרו קשר</a>
-                </div>
+        <div class="container margin-auto text-center scroll-reveal">
+            <div class="section-header">
+                <div class="section-badge">ספקים</div>
+                <h2>ספקים יקרים, <span class="text-primary">Alexy</span> כאן גם בשבילכם</h2>
+                <p class="subtitle">העוזרת האישית שלכם מול וועדי הבתים וכל לקוח אחר. לקוחות עסקיים, עוסקים מורשים וחברות מוזמנים לפנות אלינו.</p>
             </div>
+            <a href="#contact" class="btn btn-primary">צרו קשר</a>
         </div>
     </section>
 
@@ -517,7 +514,7 @@
                     <h2>יצירת קשר</h2>
                     <p>אנחנו כאן לכל שאלה. דיירים, שוכרים, בעלי נכסים, וספקי שירות.</p>
 
-                    <div class="contact-grid">
+                    <div class="contact-grid contact-grid-compact">
                         <div class="info-item highlight-whatsapp">
                             <div class="icon-circle">
                                 <i class="fa-brands fa-whatsapp"></i>
@@ -525,7 +522,7 @@
                             <div>
                                 <h4>ווצאפ</h4>
                                 <a href="https://wa.me/972507275202" class="contact-link">050-7275202</a>
-                                <br>
+                                <span class="contact-sep">·</span>
                                 <a href="https://wa.me/972507273220" class="contact-link">050-7273220</a>
                             </div>
                         </div>
@@ -549,16 +546,6 @@
                                 <a href="mailto:cs@billclick.co.il" class="contact-link">cs@billclick.co.il</a>
                             </div>
                         </div>
-
-                        <div class="info-item">
-                            <div class="icon-circle">
-                                <i class="fa-solid fa-clock"></i>
-                            </div>
-                            <div>
-                                <h4>זמינות</h4>
-                                <p>ניתן להשאיר פרטים בוואטסאפ</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -567,13 +554,19 @@
 
     <footer class="site-footer">
         <div class="container margin-auto text-center">
-            <div class="footer-logo">BillClick<span>.</span></div>
+            <a href="#" class="footer-logo">BillClick<span>.</span></a>
+            <nav class="footer-nav" aria-label="קישורים בתחתית">
+                <a href="#contact">צור קשר</a>
+                <a href="vaadbot/">אפליקציות</a>
+                <a href="https://wa.me/972507275202" target="_blank" rel="noopener">וואטסאפ</a>
+            </nav>
             <p>&copy; 2026 בילקליק (Billclick). כל הזכויות שמורות.</p>
         </div>
     </footer>
 
     <!-- Floating Elements -->
-    <a href="https://wa.me/972507275202" class="float-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/972507275202" class="float-whatsapp" target="_blank" rel="noopener"
+        aria-label="שלחו הודעה בוואטסאפ">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
