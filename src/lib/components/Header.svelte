@@ -19,7 +19,7 @@
 
 	onMount(() => {
 		const onScroll = () => {
-			scrolled = window.scrollY > 50;
+			scrolled = window.scrollY > 40;
 		};
 		window.addEventListener('scroll', onScroll, { passive: true });
 		onScroll();
