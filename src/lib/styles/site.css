@@ -253,6 +253,7 @@ p {
 }
 
 .header-inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -264,16 +265,37 @@ p {
     border: 1px solid transparent;
     box-shadow: none;
     border-radius: var(--radius-lg);
-    backdrop-filter: blur(0);
-    -webkit-backdrop-filter: blur(0);
     transition:
-        background 0.45s var(--ease-out),
         box-shadow 0.45s var(--ease-out),
         border-color 0.45s var(--ease-out),
-        border-radius 0.45s var(--ease-out),
         padding 0.45s var(--ease-out),
-        backdrop-filter 0.45s var(--ease-out),
-        -webkit-backdrop-filter 0.45s var(--ease-out);
+        max-width 0.45s var(--ease-out);
+}
+
+/* Frosted glass layer — opacity only (don't transition blur itself) */
+.header-inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.48);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    backdrop-filter: blur(40px) saturate(180%);
+    transition: opacity 0.4s var(--ease-out);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .header-inner::before {
+        background: rgba(255, 255, 255, 0.94);
+    }
+}
+
+.header-inner > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* Top of page: light text over hero, no glass shell */
@@ -323,11 +345,12 @@ p {
 .site-header.scrolled .header-inner {
     max-width: var(--header-width);
     padding: 10px 18px 10px 22px;
-    background: rgba(255, 255, 255, 0.86);
-    backdrop-filter: blur(22px) saturate(180%);
-    -webkit-backdrop-filter: blur(22px) saturate(180%);
-    border-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.55);
     box-shadow: 0 12px 36px rgba(15, 23, 42, 0.12);
+}
+
+.site-header.scrolled .header-inner::before {
+    opacity: 1;
 }
 
 .site-header.scrolled .logo,
