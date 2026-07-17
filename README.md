@@ -1,36 +1,51 @@
-# BillClick - Advanced Building Management 🏢
+# BillClick
 
-**BillClick** is a modern, premium landing page for a smart building management platform ("Vaad Bayit"). 
-It keeps transparency, efficiency, and community at the forefront of residential living.
+Hebrew marketing site for BillClick (ניהול ועד בית) — VaadBot, Alexy, VaadBit.
 
-## 🚀 Live Demo
-[https://billclick.co.il](https://billclick.co.il) (or your GitHub Pages link)
+**Live:** [https://billclick.co.il](https://billclick.co.il)
 
-## ✨ Features
-*   **Immersive Design**: Glassmorphism, Gradient Text, and Scroll Animations.
-*   **Interactive Particle Network**: A dynamic constellation background effect in the hero section.
-*   **Mobile First**: Fully responsive layout optimized for all devices (iPhone SE to Desktop).
-*   **Animations**: Smooth transitions, floating elements, and count-up statistics.
-*   **Conversion Focused**: Sticky "WhatsApp" button, Direct Email Integration, and "Back to Top" navigation.
+## Stack
 
-## 🛠️ Tech Stack
-*   **HTML5** (Semantic & SEO Optimized with JSON-LD)
-*   **CSS3** (Variables, Flexbox/Grid, Keyframe Animations)
-*   **JavaScript (Vanilla)** (IntersectionObserver, Canvas API, DOM Manipulation)
-*   **Assets**: FontAwesome 6, Google Fonts (Heebo/Rubik)
+- **SvelteKit** + **Svelte 5** (runes)
+- **@sveltejs/adapter-static** → GitHub Pages
+- Shared CSS in `src/lib/styles/site.css`
+- Static assets in `static/` (incl. `CNAME`)
 
-## 📦 How to Deploy
-1.  Clone the repository.
-2.  Enable **GitHub Pages** in the repository settings.
-3.  Select `main` branch and `/root` folder.
-4.  Your site is live! 🌍
+## Develop
 
-## 👥 Founders
-*   **Yehonatan Yifrach** - Founder & Economist
-*   **Kobi Shoshani** - Founder & Investor
+```bash
+npm install
+npm run dev
+```
 
-## 👨‍💻 Developer
-*   **D371L** - [GitHub](https://github.com/D371L)
+## Build & preview
 
----
-© 2021 BillClick. All rights reserved.
+```bash
+npm run build
+npm run preview
+```
+
+Output goes to `build/` (prerendered HTML for `/` and `/vaadbot/`).
+
+## Deploy (GitHub Pages)
+
+Workflow: `.github/workflows/deploy.yml` builds and deploys `build/` on push to `master`/`main`.
+
+In repo **Settings → Pages**, set source to **GitHub Actions** (not “Deploy from branch”). Custom domain stays `billclick.co.il` via `static/CNAME`.
+
+## Project layout
+
+```
+src/routes/           # pages (+page.svelte)
+src/lib/components/   # Header, FAQ, hero, etc.
+src/lib/actions/      # scrollReveal
+src/lib/data/         # FAQ, nav, JSON-LD
+static/assets/        # images, legal PDFs
+```
+
+## Founders
+
+- Yehonatan Yifrach — Founder & CEO/CFO
+- Yaakov Shoshani — Founder & COO
+
+© 2026 BillClick
