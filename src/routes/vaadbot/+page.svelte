@@ -170,7 +170,7 @@
 					<span>סכום שנגבה</span>
 				</div>
 				<div class="vb-impact-item">
-					<strong>1,000+</strong>
+					<strong>2,000+</strong>
 					<span>משתמשים</span>
 				</div>
 				<div class="vb-impact-item">
