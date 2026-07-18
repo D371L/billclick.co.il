@@ -147,23 +147,35 @@
 					·
 					<a href="https://vaadbit.com/" target="_blank" rel="noopener">עוד על VaadBit</a>
 				</p>
-				<div class="vb-proof-strip">
-					<div class="vb-proof-item">
-						<strong>97%</strong>
-						<span>הצלחה בגבייה</span>
-					</div>
-					<div class="vb-proof-item">
-						<strong>5M+</strong>
-						<span>סכום שנגבה</span>
-					</div>
-					<div class="vb-proof-item">
-						<strong>1,000+</strong>
-						<span>משתמשים</span>
-					</div>
-					<div class="vb-proof-item">
-						<strong>89%</strong>
-						<span>חיסכון בזמן</span>
-					</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="vb-impact" aria-labelledby="impact-heading">
+	<div class="container margin-auto">
+		<div class="vb-impact-shell" use:scrollReveal>
+			<div class="vb-impact-copy">
+				<div class="section-badge">BillClick במספרים</div>
+				<h2 id="impact-heading">התוצאות של כל המערכת</h2>
+				<p>נתונים מצטברים מכלל פתרונות BillClick לניהול, גבייה ותקשורת בבניינים.</p>
+			</div>
+			<div class="vb-impact-grid">
+				<div class="vb-impact-item">
+					<strong>97%</strong>
+					<span>הצלחה בגבייה</span>
+				</div>
+				<div class="vb-impact-item">
+					<strong>5M+</strong>
+					<span>סכום שנגבה</span>
+				</div>
+				<div class="vb-impact-item">
+					<strong>1,000+</strong>
+					<span>משתמשים</span>
+				</div>
+				<div class="vb-impact-item">
+					<strong>89%</strong>
+					<span>חיסכון בזמן</span>
 				</div>
 			</div>
 		</div>
