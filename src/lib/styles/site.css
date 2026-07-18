@@ -2033,37 +2033,30 @@ p {
 }
 
 .vb-impact {
-    padding: 0 24px 88px;
-    background: white;
+    padding: 72px 0;
+    background: var(--bg-soft);
+    text-align: center;
 }
 
-.vb-impact-shell {
-    display: grid;
-    grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.7fr);
-    align-items: center;
-    gap: 48px;
-    padding: 36px 42px;
-    border: 1px solid rgba(0, 113, 227, 0.1);
-    border-radius: var(--radius-lg);
-    background:
-        radial-gradient(circle at 85% 20%, rgba(100, 210, 255, 0.2), transparent 32%),
-        rgba(238, 245, 255, 0.78);
+.vb-impact .section-header {
+    margin-bottom: 40px;
 }
 
-.vb-impact-copy h2 {
-    margin-bottom: 8px;
+.vb-impact .section-header h2 {
     font-size: clamp(1.65rem, 2.5vw, 2.2rem);
 }
 
-.vb-impact-copy p {
-    max-width: 390px;
-    margin: 0;
+.vb-impact-note {
+    max-width: 560px;
+    margin: 0 auto;
     color: var(--text-light);
 }
 
 .vb-impact-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 920px;
+    margin: 0 auto;
 }
 
 .vb-impact-item {
@@ -2207,18 +2200,8 @@ p {
     .vb-audience-grid,
     .vb-audience-grid-3,
     .vb-bit-layout,
-    .vb-bit-stats-grid,
-    .vb-impact-shell {
+    .vb-bit-stats-grid {
         grid-template-columns: 1fr;
-    }
-
-    .vb-impact-shell {
-        gap: 28px;
-        text-align: center;
-    }
-
-    .vb-impact-copy p {
-        margin-inline: auto;
     }
 
     .vb-bit-media,
@@ -2291,11 +2274,7 @@ p {
     }
 
     .vb-impact {
-        padding: 0 16px 64px;
-    }
-
-    .vb-impact-shell {
-        padding: 28px 18px;
+        padding: 56px 0;
     }
 
     .vb-impact-grid {
